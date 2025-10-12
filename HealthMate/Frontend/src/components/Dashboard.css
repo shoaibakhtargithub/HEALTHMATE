@@ -1,0 +1,104 @@
+/* Overall Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title Styling */
+.dashboard-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #1976d2;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Cards Container */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Individual Card Styling */
+.dashboard-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 300px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card h2 {
+  font-size: 1.3rem;
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  font-size: 0.85rem;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.dashboard-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-link:hover {
+  background-color: #145ea8;
+}
+
+/* Phones (max width: 600px) */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-card {
+    width: 100%;
+  }
+
+  .dashboard-link {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+}
+
+/* Tablets (max width: 900px) */
+@media (max-width: 900px) {
+  .dashboard-title {
+    font-size: 1.7rem;
+  }
+
+  .dashboard-card {
+    width: 80%;
+  }
+}
+
+  
