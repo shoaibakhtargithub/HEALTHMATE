@@ -1,0 +1,84 @@
+/* SymptomChecker.css */
+
+/* Container styling */
+body {
+  background-color: #e8f5e9;
+}
+/* SymptomChecker.css */
+
+/* Page container styling */
+.symptom-checker-container {
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background for readability */
+}
+
+
+  
+  /* Title styling */
+  .symptom-checker-title {
+    font-size: 2rem;
+    color: #1976d2; /* Material-UI blue */
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Form label styling */
+  .form-label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Input field styling */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border: 1px solid #1976d2;
+  }
+  
+  /* Button styling */
+  .form-button {
+    background-color: #1976d2;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #135ba1;
+  }
+  
+  /* Result text styling */
+  .result-text {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+  }
+  

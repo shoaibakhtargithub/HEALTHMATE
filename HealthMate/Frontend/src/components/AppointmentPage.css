@@ -1,0 +1,78 @@
+/* General Container */
+.appointment-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Page Title */
+  .appointment-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1976d2;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Appointment List */
+  .appointment-list h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .appointment-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .appointment-card p {
+    margin: 5px 0;
+  }
+  
+  /* Appointment Form */
+  .appointment-form {
+    margin-top: 30px;
+  }
+  
+  .appointment-form h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .appointment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .appointment-form input,
+  .appointment-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .appointment-form button {
+    background: #1976d2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .appointment-form button:hover {
+    background: #125ca1;
+  }
+  

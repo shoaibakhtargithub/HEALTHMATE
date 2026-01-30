@@ -1,0 +1,45 @@
+.health-status-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  /* Flexbox for row layout */
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next row if necessary */
+  gap: 20px; /* Space between cards */
+}
+
+.section {
+  flex: 1 1 calc(33.33% - 20px); /* Cards take 1/3rd of the row with a gap of 20px */
+  max-width: calc(33.33% - 20px); /* Max width to fit in row */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Styling for the title */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  flex-basis: 100%; /* Title takes full width */
+}
+
+/* Heading inside each section */
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+/* Paragraph inside each section */
+.section p {
+  margin: 5px 0;
+}
