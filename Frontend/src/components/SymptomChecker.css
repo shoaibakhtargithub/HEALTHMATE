@@ -1,0 +1,131 @@
+/* FULL PAGE BACKGROUND (MATCH DASHBOARD) */
+.symptom-page {
+  min-height: calc(100vh - 64px);
+  background: #f4f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* MAIN CARD */
+.symptom-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* TITLE */
+.symptom-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.9rem;
+  color: #1976d2;
+  margin-bottom: 8px;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+/* SUBTITLE */
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 22px;
+  font-size: 0.95rem;
+}
+
+/* LABEL */
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+/* INPUT */
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 18px;
+}
+
+.form-input:focus {
+  border-color: #1976d2;
+}
+
+/* BUTTON */
+.form-button {
+  width: 100%;
+  background: #1976d2;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.form-button:hover {
+  background: #125aa0;
+}
+
+/* RESULT */
+.result-box {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 0.95rem;
+}
+
+.result-box.info {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+.result-box.warning {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.result-icon {
+  margin-top: 2px;
+}
+
+/* DISCLAIMER */
+.disclaimer {
+  margin-top: 18px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .symptom-card {
+    padding: 20px;
+  }
+
+  .symptom-title {
+    font-size: 1.6rem;
+  }
+}

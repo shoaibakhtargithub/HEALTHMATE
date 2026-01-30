@@ -1,0 +1,133 @@
+/* PAGE */
+.appointment-page {
+  min-height: calc(100vh - 64px);
+  padding: 32px;
+  padding-top: 96px; /* Navbar safe */
+  background: #f4f7fb;
+}
+
+/* TITLE */
+.page-title {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* SECTION */
+.appointment-section {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.appointment-section h2 {
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+/* GRID */
+.appointment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* CARD */
+.appointment-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.appt-date {
+  font-weight: bold;
+  color: #374151;
+}
+
+/* STATUS */
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.status.confirmed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status.pending {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+/* FORM */
+.appointment-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #374151;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+.primary-btn {
+  grid-column: span 2;
+  background: #1976d2;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #125aa0;
+}
+
+.empty-text {
+  color: #6b7280;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .appointment-form {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-btn {
+    grid-column: span 1;
+  }
+
+  .appointment-page {
+    padding: 20px;
+    padding-top: 96px;
+  }
+}
